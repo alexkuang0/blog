@@ -70,14 +70,15 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "yo."
-        Content: My name is Ning "Alex" Kuang
+        Title: "Yo."
+        Content: Ning "Alex" Kuang here.
 
     socialIcons:
         - name: github
           url: "https://github.com/alexkuang0"
         - name: instagram
           url: "https://instagram.com/alexkuang0"
+        
 
     analytics:
         google:
@@ -125,6 +126,10 @@ menu:
           name: search
           url: /search/
           weight: 40
+        - identifier: about
+          name: about
+          url: /about/
+          weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
