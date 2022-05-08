@@ -1,11 +1,18 @@
 ---
-type: page
-title: About
+title: "About"
+date: 2022-05-08T04:14:34-05:00
 ---
 
-Hey there.
-
+Hey there. \
 My name is Ning "Alex" Kuang.
+
+I am ...
+
+- 🎓 a college student @ [UTexas][1] 🤘
+- 💻 a software engineer
+- 📱 a digital native
+
+<span style="font-size: 28px; letter-spacing: 4px;">🧡💻📷🏀🎱🎮🀄🐶🐱☮️</span>
 
 ## Contact
 
@@ -14,3 +21,5 @@ Comment below or email me at 👇
 ```sh
 echo "eW9Aa3VhbmcuZGV2Cg==" | base64 -d
 ```
+
+[1]: https://utexas.edu

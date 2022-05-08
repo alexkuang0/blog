@@ -1,5 +1,5 @@
 baseURL: "https://kuang.dev/"
-title: Ning "Alex" Kuang
+title: kuang.dev
 paginate: 5
 theme: PaperMod
 
@@ -17,22 +17,22 @@ minify:
 
 params:
     env: production
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperMod]
+    title: kuang.dev
+    description: "Personal website of Ning \"Alex\" Kuang"
+    keywords: [Blog, Kuang Ning]
     author: Ning "Alex" Kuang
-    images: ["<link or path of image for opengraph, twitter-cards>"]
+    # images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
 
-    ShowReadingTime: true
+    ShowReadingTime: false
     ShowShareButtons: false
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     disableSpecial1stPost: false
-    disableScrollToTop: false
+    disableScrollToTop: true
     comments: true
     hidemeta: false
     hideSummary: false
@@ -78,15 +78,13 @@ params:
           url: "https://github.com/alexkuang0"
         - name: instagram
           url: "https://instagram.com/alexkuang0"
+        - name: linkedin
+          url: "https://linkedin.com/in/alexkuang0"
         
 
     analytics:
         google:
-            SiteVerificationTag: "XYZabc"
-        bing:
-            SiteVerificationTag: "XYZabc"
-        yandex:
-            SiteVerificationTag: "XYZabc"
+            SiteVerificationTag: "G-HC8JDGL923"
 
     cover:
         hidden: true # hide everywhere but not in structured data
@@ -95,29 +93,26 @@ params:
 
     editPost:
         URL: "https://github.com/alexkuang0/blog/blob/main/content"
-        Text: "Edit" # edit text
+        Text: "View on GitHub" # edit text
         appendFilePath: true # to append file path to Edit link
 
     # for search
     # https://fusejs.io/api/options.html
     fuseOpts:
         isCaseSensitive: false
+        includeMatches: true
         shouldSort: true
         location: 0
-        distance: 1000
+        distance: 100
         threshold: 0.4
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        # - identifier: categories
-        #   name: categories
-        #   url: /categories/
-        #   weight: 10
-        # - identifier: tags
-        #   name: tags
-        #   url: /tags/
-        #   weight: 20
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
         - identifier: archives
           name: archives
           url: /archives/
@@ -139,9 +134,16 @@ menu:
 #         guessSyntax: true
 #         lineNos: true
 #         style: monokai
-
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
 outputs:
     home:
         - HTML
         - RSS
         - JSON # is necessary
+
+rssLimit: 10
+taxonomies:
+    tag: tags
