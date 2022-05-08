@@ -7,13 +7,13 @@ showtoc: true
 
 This is my new favorite combo -- also how this website is built upon. I am using [Hugo][hugo] and [PaperMod][papermod] (a Hugo theme) on [Cloudflare Pages][cf-pages].
 
-**Hugo** is a static site generator written in Go, so it runs much faster than SSGs written in scripting languages like Jekyll and Hexo. **Cloudflare Pages** is a new alternative to [GitHub Pages][gh-pages], where we can take adavantages of Cloudflare's global CDN and integrations with other Cloudflare services. It is easy, works great and I wanna share it with you.
+**Hugo** is a static site generator written in Go, so it runs much faster than SSGs written in scripting languages like Jekyll and Hexo. **Cloudflare Pages** is a new alternative to [GitHub Pages][gh-pages], where we can take advantages of Cloudflare's global CDN and integrations with other Cloudflare services. It is easy, works great and I wanna share it with you.
 
 ## Set up Hugo and PaperMod
 
 First, create an **empty** repo in your GitHub or GitLab account.
 
-Below is a script with step-by-step explanations I compiled from the Hugo [Quick Start][quick-start] and PaperMod [installation][install-papermod] guide. Beware to replace the placeholders in the angle brackets (i.e. `<site-name>`).
+Below is a script with step-by-step explanations I compiled from the Hugo [Quick Start][quick-start] and PaperMod [installation][install-papermod] guide. Beware of the placeholders in the angle brackets (i.e., `<site-name>`).
 
 ```sh
 # Install Hugo with Homebrew
@@ -50,13 +50,13 @@ hugo v0.98.0+extended darwin/amd64 BuildDate=unknown
 
 In this case, just set `HUGO_VERSION` to `0.98.0`.
 
-That's all you need for the set up. Wait for Cloudflare to build and deploy your site. Cloudflare will give you a default subdomain name of `pages.dev`, but you can always **bring your own domain name** by adding that domain to your "custom domains" of the Cloudflare Pages project and change your DNS settings accordingly.
+That's all you need for the setup. Wait for Cloudflare to build and deploy your site. Cloudflare will give you a default subdomain name of `pages.dev`, but you can always **bring your own domain name** by adding that domain to your "custom domains" of the Cloudflare Pages project and change your DNS settings accordingly.
 
 ## Sprinkle your site with some custom code
 
 Wanna modify the Hugo theme to fit your needs and aesthetics? That's easy and intuitive in Hugo. You don't have to mess with the original theme files -- just create a new file of the same relative path under `/layouts` and Hugo will replace that for ya.
 
-For example, I added a comment system [utteranc.es][utter] (that's also easy to configure and serverless btw). Instead of modifying the theme file `/themes/PaperMod/layouts/partials/comments.html`, I created a new file `/layouts/partials/comments.html` and made changes in that.
+For example, I added a comment system [utteranc.es][utter] (that's also easy to configure and serverless, btw). Instead of modifying the theme file `/themes/PaperMod/layouts/partials/comments.html`, I created a new file `/layouts/partials/comments.html` and made changes in that.
 
 ## What's more
 
