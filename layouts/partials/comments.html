@@ -14,32 +14,3 @@
         crossorigin="anonymous"
         async>
 </script>
-<script defer>
-    const giscus = document.getElementById('giscus-script');
-    
-    function setTheme(theme) {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({
-            giscus: {
-                setConfig: { theme }
-            }
-        }, 'https://giscus.app');
-    }
-
-    if (localStorage.getItem("pref-theme") === "dark") {
-        giscus.setAttribute('data-theme', 'dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        giscus.setAttribute('data-theme', 'light');
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        giscus.setAttribute('data-theme', 'dark');
-    }
-    
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (localStorage.getItem("pref-theme") === "dark") {
-            setTheme("light");
-        } else if (localStorage.getItem("pref-theme") === "light") {
-            setTheme("dark");
-        }
-    })
-</script>

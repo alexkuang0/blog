@@ -22,9 +22,9 @@ params:
     keywords: [Blog, Kuang Ning]
     author: Ning "Alex" Kuang
     # images: ["<link or path of image for opengraph, twitter-cards>"]
-    DateFormat: "January 2, 2006"
+    DateFormat: "Jan 2, 2006"
     defaultTheme: auto # dark, light
-    disableThemeToggle: false
+    disableThemeToggle: true
 
     ShowReadingTime: false
     ShowShareButtons: false
@@ -42,16 +42,17 @@ params:
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
-        favicon: "<link / abs url>"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "<link / abs url>"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
+        # favicon: "<link / abs url>"
+        # favicon16x16: "<link / abs url>"
+        # favicon32x32: "<link / abs url>"
+        # apple_touch_icon: "<link / abs url>"
+        # safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: kuang.dev
-        # icon: /apple-touch-icon.png
-        # iconHeight: 35
+        text: ' '
+        icon: KUANG.svg
+        iconDark: KUANG-dark.svg
+        iconHeight: 20
 
     # profile-mode
     profileMode:
@@ -80,11 +81,6 @@ params:
           url: "https://instagram.com/alexkuang0"
         - name: linkedin
           url: "https://linkedin.com/in/alexkuang0"
-        
-
-    analytics:
-        google:
-            SiteVerificationTag: "G-HC8JDGL923"
 
     cover:
         hidden: true # hide everywhere but not in structured data
