@@ -25,5 +25,7 @@ echo "eW9Aa3VhbmcuZGV2Cg==" | base64 -d
 ## Logs
 
 - `05/05/2022` -- Init `kuang.dev`
+- `05/09/2022` -- New [Logo][2]
 
 [1]: https://utexas.edu
+[2]: https://assets.kuang.dev/images/KUANG.svg
