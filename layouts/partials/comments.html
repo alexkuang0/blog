@@ -1,7 +1,45 @@
-<script src="https://utteranc.es/client.js"
-        repo="alexkuang0/blog"
-        issue-term="pathname"
-        theme="preferred-color-scheme"
+<script src="https://giscus.app/client.js"
+        id="giscus-script"
+        data-repo="alexkuang0/blog"
+        data-repo-id="R_kgDOHSSjFw"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOHSSjF84CPAQN"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
         crossorigin="anonymous"
         async>
+</script>
+<script defer>
+    const giscus = document.getElementById('giscus-script');
+    
+    function setTheme(theme) {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({
+            giscus: {
+                setConfig: { theme }
+            }
+        }, 'https://giscus.app');
+    }
+
+    if (localStorage.getItem("pref-theme") === "dark") {
+        giscus.setAttribute('data-theme', 'dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        giscus.setAttribute('data-theme', 'light');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        giscus.setAttribute('data-theme', 'dark');
+    }
+    
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (localStorage.getItem("pref-theme") === "dark") {
+            setTheme("light");
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            setTheme("dark");
+        }
+    })
 </script>
