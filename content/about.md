@@ -22,4 +22,8 @@ Comment below or email me at 👇
 echo "eW9Aa3VhbmcuZGV2Cg==" | base64 -d
 ```
 
+## Logs
+
+- `05/05/2022` -- Init `kuang.dev`
+
 [1]: https://utexas.edu
