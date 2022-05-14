@@ -3,11 +3,15 @@ title: "Cloudflare Pages + Hugo"
 date: 2022-05-08T16:16:09-05:00
 Summary: This is my new favorite combo -- also how this website is built upon.
 showtoc: true
+tags:
+- Tutorial
+- Cloudflare
+- Hugo
 ---
 
 This is my new favorite combo -- also how this website is built upon. I am using [Hugo][hugo] and [PaperMod][papermod] (a Hugo theme) on [Cloudflare Pages][cf-pages].
 
-**Hugo** is a static site generator written in Go, so it runs much faster than SSGs written in scripting languages like Jekyll and Hexo. **Cloudflare Pages** is a new alternative to [GitHub Pages][gh-pages], where we can take advantages of Cloudflare's global CDN and integrations with other Cloudflare services. It is easy, works great and I wanna share it with you.
+**Hugo** is a static site generator written in Go, so it runs much faster than SSGs written in scripting languages like Jekyll and Hexo. **Cloudflare Pages** is a new alternative to [GitHub Pages][gh-pages], where we can take advantage of Cloudflare's global CDN and integrations with other Cloudflare services. It is easy, works great and I wanna share it with you.
 
 ## Set up Hugo and PaperMod
 
@@ -56,14 +60,14 @@ That's all you need for the setup. Wait for Cloudflare to build and deploy your 
 
 Wanna modify the Hugo theme to fit your needs and aesthetics? That's easy and intuitive in Hugo. You don't have to mess with the original theme files -- just create a new file of the same relative path under `/layouts` and Hugo will replace that for ya.
 
-For example, I added a comment system [utteranc.es][utter] (that's also easy to configure and serverless, btw). Instead of modifying the theme file `/themes/PaperMod/layouts/partials/comments.html`, I created a new file `/layouts/partials/comments.html` and made changes in that.
+For example, I added a comment system [giscus][giscus] (that's also easy to configure and serverless, btw). Instead of modifying the theme file `/themes/PaperMod/layouts/partials/comments.html`, I created a new file `/layouts/partials/comments.html` and made changes to that.
 
 ## What's more
 
 You can preview, retry, or even rollback to your previous deployments!
 
 {{< figure
-    src="cf-pages.jpg"
+    src="https://assets.kuang.dev/images/blog/cf-pages.jpg"
     width="500"
     alt="Deployment features of Cloudflare Pages" >}}
 
@@ -77,4 +81,4 @@ You can preview, retry, or even rollback to your previous deployments!
 [install-papermod]: https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
 [cf-dash]: https://dash.cloudflare.com
 [cf-doc]: https://developers.cloudflare.com/pages/platform/build-configuration
-[utter]: https://utteranc.es/
+[giscus]: https://giscus.app/
