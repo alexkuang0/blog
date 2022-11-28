@@ -16,16 +16,31 @@ I am ...
 
 ## Contact
 
-Comment below or email me at 👇
+For public messages or inquiries, please comment below.
+
+### Email
 
 ```sh
 echo "eW9Aa3VhbmcuZGV2Cg==" | base64 -d
 ```
 
+### Social Media
+
+You can find me by **@alexkuang0** or **高等小熊猫** on most platforms.
+
+### 🔒 Encryption
+
+- Encrypt your email with my **PGP public key** (Find it here: https://keys.openpgp.org/)
+- If you know my **phone number** ...
+  - ✅ **WhatsApp:** End-to-end encryption by default.
+  - ✅ **Signal:** End-to-end encryption by default.
+  - 🟡 **iMessage:** Please use a non-Chinese Apple ID.
+
 ## Logs
 
 - `05/05/2022` -- Init `kuang.dev`
 - `05/09/2022` -- New [Logo][2]
+- `11/28/2022` -- Update contacts
 
 [1]: https://utexas.edu
 [2]: https://assets.kuang.dev/images/KUANG.svg
