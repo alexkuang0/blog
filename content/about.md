@@ -14,17 +14,25 @@ I am ...
 
 <span style="font-size: 28px; letter-spacing: 4px;">🧡💻📷🏀🎱🎮🀄🐶🐱☮️</span>
 
-## Contact
+---
+
+## 🙌 Friends
+
+- **Hengning Zhang:** [hengningzhang.com][3]
+
+---
+
+## 💬 Contacts {#contacts}
 
 For public messages or inquiries, please comment below.
 
-### Email
+### 📧 Email
 
 ```sh
 echo "eW9Aa3VhbmcuZGV2Cg==" | base64 -d
 ```
 
-### Social Media
+### 🪩 Social Media
 
 You can find me by **@alexkuang0** or **高等小熊猫** on most platforms.
 
@@ -36,7 +44,9 @@ You can find me by **@alexkuang0** or **高等小熊猫** on most platforms.
   - ✅ **Signal:** End-to-end encryption by default.
   - 🟡 **iMessage:** Please use a non-Chinese Apple ID.
 
-## Logs
+---
+
+## 📃 Logs
 
 - `05/05/2022` -- Init `kuang.dev`
 - `05/09/2022` -- New [Logo][2]
@@ -44,3 +54,4 @@ You can find me by **@alexkuang0** or **高等小熊猫** on most platforms.
 
 [1]: https://utexas.edu
 [2]: https://assets.kuang.dev/images/KUANG.svg
+[3]: https://hengningzhang.com/
